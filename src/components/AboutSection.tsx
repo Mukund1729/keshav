@@ -139,7 +139,7 @@ export const AboutSection: React.FC = () => {
           {activeTab === 'who' && (
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
               gap: '24px'
             }}>
               <div className="card">
@@ -183,7 +183,7 @@ export const AboutSection: React.FC = () => {
           {activeTab === 'believe' && (
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
               gap: '24px'
             }}>
               <div className="card">
@@ -221,7 +221,7 @@ export const AboutSection: React.FC = () => {
             }}>
               <div style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
                 gap: '36px'
               }}>
                 <div style={{ borderLeft: '3px solid var(--gold-400)', paddingLeft: '24px' }}>
@@ -252,7 +252,7 @@ export const AboutSection: React.FC = () => {
           {activeTab === 'why' && (
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
               gap: '24px'
             }}>
               {[

@@ -65,6 +65,7 @@ export const CampTrainMarquee: React.FC = () => {
       <div className="container">
         {/* STATUTORY & DPIIT RECOGNITION CREDIBILITY BANNER AT FRONT */}
         <div
+          className="dpiit-recognition-banner"
           style={{
             background: 'linear-gradient(135deg, #062b20 0%, #0d4a38 55%, #145e48 100%)',
             borderRadius: 'var(--radius-xl)',
@@ -82,15 +83,15 @@ export const CampTrainMarquee: React.FC = () => {
               flexWrap: 'wrap',
               alignItems: 'center',
               justifyContent: 'space-between',
-              gap: '24px'
+              gap: '20px'
             }}
           >
             {/* Left: DPIIT & Startup India Logo Badge */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap', flex: '1 1 300px' }}>
               <div
                 style={{
                   background: '#ffffff',
-                  padding: '8px 16px',
+                  padding: '8px 14px',
                   borderRadius: 'var(--radius-md)',
                   display: 'flex',
                   alignItems: 'center',
@@ -102,7 +103,7 @@ export const CampTrainMarquee: React.FC = () => {
                   src="/dpiit.png"
                   alt="DPIIT #startupindia Recognition"
                   style={{
-                    height: '52px',
+                    height: '46px',
                     width: 'auto',
                     objectFit: 'contain',
                     display: 'block'
@@ -135,7 +136,7 @@ export const CampTrainMarquee: React.FC = () => {
 
                 <div
                   style={{
-                    fontSize: '1.35rem',
+                    fontSize: 'clamp(1.15rem, 2.5vw, 1.35rem)',
                     fontWeight: 800,
                     letterSpacing: '-0.01em',
                     color: '#ffffff',
@@ -145,7 +146,7 @@ export const CampTrainMarquee: React.FC = () => {
                   DPIIT Recognition: <span style={{ color: '#fed7aa', letterSpacing: '0.04em' }}>DIPPR78967</span>
                 </div>
 
-                <div style={{ fontSize: '0.84rem', color: '#e2e8f0', marginTop: '2px' }}>
+                <div style={{ fontSize: '0.82rem', color: '#e2e8f0', marginTop: '2px' }}>
                   Department for Promotion of Industry and Internal Trade • Ministry of Commerce & Industry
                 </div>
               </div>
@@ -153,15 +154,17 @@ export const CampTrainMarquee: React.FC = () => {
 
             {/* Right: Corporate CIN & Registered Office in Hisar, Haryana */}
             <div
+              className="dpiit-cin-card"
               style={{
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '8px',
                 background: 'rgba(255, 255, 255, 0.08)',
-                padding: '14px 20px',
+                padding: '14px 18px',
                 borderRadius: 'var(--radius-md)',
                 border: '1px solid rgba(255, 255, 255, 0.15)',
-                minWidth: '260px'
+                flex: '1 1 auto',
+                maxWidth: '100%'
               }}
             >
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>

@@ -75,7 +75,7 @@ export const Hero: React.FC = () => {
             </p>
 
             {/* CTAs */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '14px', marginBottom: '40px' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '14px', marginBottom: '40px' }} className="hero-cta-group">
               <button
                 onClick={handleExploreWellness}
                 className="btn btn-primary btn-lg"
@@ -109,7 +109,7 @@ export const Hero: React.FC = () => {
               gap: '16px',
               paddingTop: '24px',
               borderTop: '1px solid var(--border-subtle)'
-            }}>
+            }} className="hero-trust-grid">
               <div>
                 <div style={{ fontSize: '1.4rem', fontWeight: 800, color: 'var(--ayun-emerald-dark)', fontFamily: 'var(--font-mono)' }}>
                   {state.cmsStats.doctorsCount}{state.cmsStats.doctorsCountSuffix}
@@ -316,6 +316,11 @@ export const Hero: React.FC = () => {
         @media (min-width: 992px) {
           .hero-split-grid {
             grid-template-columns: 1.15fr 0.95fr !important;
+          }
+        }
+        @media (max-width: 640px) {
+          .hero-split-grid {
+            gap: 32px !important;
           }
         }
       `}</style>

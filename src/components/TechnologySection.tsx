@@ -66,7 +66,7 @@ export const TechnologySection: React.FC = () => {
         {/* 6 Technology Focus Areas Grid */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
           gap: '20px',
           marginBottom: '40px'
         }}>
@@ -105,7 +105,7 @@ export const TechnologySection: React.FC = () => {
           padding: '36px',
           boxShadow: 'var(--shadow-card)',
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
           gap: '28px',
           alignItems: 'center'
         }}>
