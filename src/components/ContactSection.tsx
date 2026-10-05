@@ -288,16 +288,40 @@ export const ContactSection: React.FC = () => {
               <h3 style={{ fontSize: '1.6rem', color: '#ffffff', marginBottom: '4px' }}>
                 AYUNEXIS PRIVATE LIMITED
               </h3>
-              <p style={{ fontSize: '0.86rem', color: 'var(--gold-300)', marginBottom: '24px' }}>
+              <p style={{ fontSize: '0.86rem', color: 'var(--gold-300)', marginBottom: '18px' }}>
                 Elevating Your Health at Every Step
               </p>
+
+              {/* DPIIT Recognition Badge */}
+              <div style={{
+                background: '#ffffff',
+                padding: '8px 14px',
+                borderRadius: 'var(--radius-sm)',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '12px',
+                marginBottom: '20px'
+              }}>
+                <img
+                  src="/dpiit.png"
+                  alt="DPIIT #startupindia Recognition"
+                  style={{ height: '36px', width: 'auto', objectFit: 'contain' }}
+                />
+                <div style={{ borderLeft: '1px solid #cbd5e1', paddingLeft: '10px' }}>
+                  <div style={{ fontSize: '0.7rem', color: '#64748b', fontWeight: 600, textTransform: 'uppercase' }}>DPIIT Recognition</div>
+                  <div style={{ fontSize: '0.85rem', fontWeight: 800, color: '#0d4a38' }}>DIPPR78967</div>
+                </div>
+              </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', fontSize: '0.88rem', color: '#cbd5e1' }}>
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                   <MapPin size={18} color="var(--gold-400)" style={{ flexShrink: 0, marginTop: '3px' }} />
                   <div>
                     <strong>Corporate Headquarters:</strong>
-                    <div>Ayunexis Health & Wellness Pavilion, Sector 44, Cyber City Corridor, Gurugram, NCR, India - 122003</div>
+                    <div>Ayunexis Health & Wellness Hub, Hisar, Haryana, India - 125001</div>
+                    <div style={{ fontSize: '0.78rem', color: '#fef08a', marginTop: '2px' }}>
+                      CIN: U86900RJ2026PTC146128
+                    </div>
                   </div>
                 </div>
 

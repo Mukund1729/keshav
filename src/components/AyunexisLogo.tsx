@@ -5,94 +5,76 @@ interface LogoProps {
   showText?: boolean;
   textColor?: string;
   subtextColor?: string;
+  variant?: 'color' | 'white';
 }
 
 export const AyunexisLogo: React.FC<LogoProps> = ({
   size = 40,
   showText = true,
   textColor = '#0d4a38',
-  subtextColor = '#64748b'
+  subtextColor = '#64748b',
+  variant = 'color'
 }) => {
+  const emblemSrc = variant === 'white' ? '/ayunexis-emblem-white.png' : '/ayunexis-emblem.png';
+
   return (
-    <div style={{ display: 'inline-flex', alignItems: 'center', gap: '12px' }}>
-      {/* Crisp Circular Tri-Dosha Nexus Emblem */}
-      <svg
+    <div
+      style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+        gap: '10px',
+        textDecoration: 'none',
+        flexShrink: 0
+      }}
+      className="ayunexis-logo-brand"
+    >
+      {/* Official Ayunexis Tri-Dosha Nexus Emblem */}
+      <img
+        src={emblemSrc}
+        alt="Ayunexis Official Emblem"
         width={size}
         height={size}
-        viewBox="0 0 100 100"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        style={{ flexShrink: 0 }}
-      >
-        {/* Outer Ring */}
-        <circle cx="50" cy="50" r="45" stroke="#0d4a38" strokeWidth="6" fill="#f8faf9" />
-        
-        {/* Central Tri-Lobe Knot (Vata, Pitta, Kapha Nexus) */}
-        <path
-          d="M 50,22 
-             C 62,35 78,50 68,68 
-             C 58,84 40,84 32,68 
-             C 22,50 38,35 50,22 Z"
-          fill="none"
-          stroke="#0d4a38"
-          strokeWidth="5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        
-        {/* Intersecting Loops */}
-        <path
-          d="M 32,68 
-             C 42,54 50,34 70,36 
-             C 86,38 88,60 74,72 
-             C 60,82 42,76 32,68 Z"
-          fill="none"
-          stroke="#0d4a38"
-          strokeWidth="4.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M 68,68 
-             C 56,54 50,34 30,36 
-             C 14,38 12,60 26,72 
-             C 40,82 58,76 68,68 Z"
-          fill="none"
-          stroke="#0d4a38"
-          strokeWidth="4.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-
-        {/* Central Warm Gold Core Spark */}
-        <circle cx="50" cy="53" r="5" fill="#c59b58" />
-      </svg>
+        style={{
+          width: `${size}px`,
+          height: `${size}px`,
+          objectFit: 'contain',
+          flexShrink: 0,
+          display: 'block'
+        }}
+      />
 
       {showText && (
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
-          <div style={{
-            fontFamily: 'var(--font-heading)',
-            fontSize: `${size * 0.52}px`,
-            fontWeight: 800,
-            letterSpacing: '-0.02em',
-            color: textColor,
-            lineHeight: 1
-          }}>
+        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', lineHeight: 1.15, flexShrink: 0 }}>
+          <span
+            style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: `${Math.round(size * 0.54)}px`,
+              fontWeight: 800,
+              letterSpacing: '-0.025em',
+              color: textColor,
+              lineHeight: 1,
+              whiteSpace: 'nowrap'
+            }}
+          >
             Ayunexis
-          </div>
-          <div style={{
-            fontFamily: 'var(--font-body)',
-            fontSize: `${size * 0.23}px`,
-            letterSpacing: '0.04em',
-            color: subtextColor,
-            fontWeight: 600,
-            marginTop: '3px',
-            textTransform: 'uppercase'
-          }}>
+          </span>
+          <span
+            style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: `${Math.max(9, Math.round(size * 0.22))}px`,
+              letterSpacing: '0.05em',
+              color: subtextColor,
+              fontWeight: 700,
+              marginTop: '3px',
+              textTransform: 'uppercase',
+              whiteSpace: 'nowrap'
+            }}
+          >
             Private Limited
-          </div>
+          </span>
         </div>
       )}
     </div>
   );
 };
+

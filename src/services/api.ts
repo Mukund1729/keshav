@@ -129,8 +129,8 @@ class AyunexisApiService {
   }
 
   /**
-   * AyurTaila AI Spectral Analysis Engine
-   * POST /api/v1/innovation/ayurtaila/spectral-scan
+   * Clinical Formulation AI Analysis Engine
+   * POST /api/v1/innovation/formulation/scan
    */
   public async scanFormulation(sampleId: string): Promise<{
     sampleId: string;

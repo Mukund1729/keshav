@@ -225,6 +225,11 @@ export const Navbar: React.FC = () => {
             display: none !important;
           }
         }
+        @media (max-width: 640px) {
+          #nav-book-consult-btn {
+            display: none !important;
+          }
+        }
       `}</style>
     </header>
   );

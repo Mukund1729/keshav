@@ -41,7 +41,7 @@ export const Footer: React.FC = () => {
           <div style={{ gridColumn: 'span 1' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
               <img
-                src="/image.png"
+                src="/ayunexis-emblem-white.png"
                 alt="Ayunexis Logo"
                 style={{
                   width: '38px',
@@ -55,13 +55,34 @@ export const Footer: React.FC = () => {
               </div>
             </div>
 
-            <p style={{ fontSize: '0.86rem', color: '#94a3b8', lineHeight: 1.6, marginBottom: '20px' }}>
+            <p style={{ fontSize: '0.86rem', color: '#94a3b8', lineHeight: 1.6, marginBottom: '16px' }}>
               A modern Ayurveda, preventive healthcare and health-tech ecosystem connecting individuals, doctors, and institutions.
             </p>
 
-            <div style={{ fontSize: '0.82rem', color: 'var(--ayun-gold)', fontWeight: 600 }}>
-              CIN: U85300DL2024PTC982014<br />
-              Ayunexis Private Limited
+            {/* DPIIT Recognition Card */}
+            <div style={{
+              background: '#ffffff',
+              padding: '6px 12px',
+              borderRadius: 'var(--radius-sm)',
+              display: 'inline-block',
+              marginBottom: '14px'
+            }}>
+              <img
+                src="/dpiit.png"
+                alt="DPIIT #startupindia Recognition"
+                style={{ height: '32px', width: 'auto', objectFit: 'contain' }}
+              />
+            </div>
+
+            <div style={{ fontSize: '0.8rem', color: '#cbd5e1', lineHeight: 1.6 }}>
+              <div style={{ color: 'var(--ayun-gold)', fontWeight: 700, marginBottom: '2px' }}>
+                Ayunexis Private Limited
+              </div>
+              <div><strong>CIN: </strong><span style={{ fontFamily: 'var(--font-mono)' }}>U86900RJ2026PTC146128</span></div>
+              <div><strong>DPIIT Recognition: </strong><span style={{ color: '#86efac' }}>DIPPR78967</span></div>
+              <div style={{ marginTop: '4px' }}>
+                <strong>Office: </strong>Hisar, Haryana, India
+              </div>
             </div>
           </div>
 

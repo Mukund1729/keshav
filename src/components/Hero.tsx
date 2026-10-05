@@ -171,9 +171,9 @@ export const Hero: React.FC = () => {
               }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                   <img
-                    src="/image.png"
+                    src="/ayunexis-emblem.png"
                     alt="Ayunexis Symbol"
-                    style={{ width: '42px', height: '42px', objectFit: 'contain', borderRadius: '8px' }}
+                    style={{ width: '42px', height: '42px', objectFit: 'contain' }}
                   />
                   <div>
                     <div style={{ fontWeight: 800, fontSize: '1.05rem', color: 'var(--ayun-emerald-dark)' }}>

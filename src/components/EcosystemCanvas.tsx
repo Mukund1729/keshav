@@ -59,7 +59,7 @@ export const EcosystemCanvas: React.FC = () => {
       badge: 'Digital Architecture',
       desc: 'Building modern computational foundations to digitize classical diagnostics, record keeping, and pre-clinical formulation analysis.',
       deliverables: [
-        'Pre-clinical formulation research and spectrophotometry (AyurTaila Analyzer™)',
+        'Pre-clinical formulation research and computational health analytics',
         'Algorithmic dosha scoring models based on Charaka Samhita parameters',
         'ABDM-ready architectural pipelines for seamless electronic health records',
         'Encrypted, low-latency telehealth rooms with digital prescription pad'

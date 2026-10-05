@@ -3,6 +3,7 @@ import { useStore } from './store/useStore';
 import { RoleSwitchBar } from './components/RoleSwitchBar';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { CampTrainMarquee } from './components/CampTrainMarquee';
 import { AboutSection } from './components/AboutSection';
 import { EcosystemCanvas } from './components/EcosystemCanvas';
 import { ServicesSection } from './components/ServicesSection';
@@ -39,6 +40,7 @@ export function App() {
       {/* Main Sections */}
       <main>
         <Hero />
+        <CampTrainMarquee />
         <AboutSection />
         <EcosystemCanvas />
         <ServicesSection />

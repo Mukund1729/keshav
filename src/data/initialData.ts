@@ -461,7 +461,7 @@ export const EVENTS_DATA: EventItem[] = [
     category: 'Health Camp',
     date: 'November 14, 2026',
     time: '8:30 AM - 4:00 PM IST',
-    location: 'Ayunexis Campus Hub, Cyber City, Gurugram',
+    location: 'Ayunexis Health & Wellness Hub, Hisar, Haryana',
     isVirtual: false,
     description: 'On-ground comprehensive health camp featuring free Prakriti diagnostics, BMI, dental, vision, and pulse examinations by our certified medical team.',
     targetAudience: 'Families, Students, Senior Citizens, Community Members',
@@ -504,7 +504,7 @@ export const CAREERS_DATA: CareerPosition[] = [
       'Design modular, performant, and resilient microservices and frontend architectures',
       'Build real-time telehealth video consultation modules and appointment scheduling engines',
       'Ensure 99.99% uptime, end-to-end data encryption, and sub-100ms API response latency',
-      'Collaborate with data scientists on AyurTaila spectral visualization algorithms'
+      'Collaborate with clinical teams on health informatics and diagnostic algorithms'
     ],
     requirements: [
       'Deep fluency in React 18/19, TypeScript, modern CSS architecture, and Node/Go',
